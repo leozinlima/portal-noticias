@@ -6,7 +6,7 @@ img {
 
 .card {
     border-radius: 4px;
-    overflow: none;
+    overflow: hidden;
     position: relative;
     &::before {
         content: "";
@@ -18,5 +18,16 @@ img {
             transparent 0%,
             #020627 100%
         );
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: 0px;
+
+        padding: 24px;
+
+        h2 {
+            margin-top: 8px;
+        }
     }
 }
